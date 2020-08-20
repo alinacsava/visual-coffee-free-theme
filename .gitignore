@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+config.codekit3
+/wp-config.php
+/wp-content/themes/visual-coffee/content.html
+/wp-content/themes/visual-coffee/crap.html
+/wp-config-up.php
+/wp-content/debug.log
+/wp-config-up.txt
+/wp-content/plugins/affiliate-wp-paypal-payouts-1.2.1.zip
+/wp-content/plugins/affiliatewp-affiliate-dashboard-sharing-1.1.6.zip
+/wp-content/plugins/affiliatewp-custom-affiliate-slugs-1.0.3.zip
+/wp-content/plugins/affiliatewp-direct-link-tracking-1.1.4.zip
+/scoase.html
+/wp-content/uploads/
+/wp-config-sample.php
