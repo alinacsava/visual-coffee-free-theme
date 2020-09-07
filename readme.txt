@@ -2,8 +2,8 @@
 Contributors: visualcoffee
 Tags: blog, two-columns, right-sidebar, grid-layout, custom-background, custom-menu, custom-logo, editor-style, theme-options, threaded-comments, translation-ready
 Requires at least: 4.7
-Tested up to: 5.5
-Stable tag: 1.1
+Tested up to: 5.5.1
+Stable tag: 1.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -32,6 +32,11 @@ To display the icons in header follow these steps:
 2. Add your links in Social Media Icons section.
 
 == Changelog ==
+
+= 1.2 =
+* Fixed admin bar overlapping mobile menu
+* Made main menu close button keyboard navigable
+* Tested with WordPress 5.5.1
 
 = 1.1 =
 * Fixed console issue in dashboard

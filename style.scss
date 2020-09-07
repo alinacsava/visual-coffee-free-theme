@@ -4,10 +4,10 @@ Theme URI: https://github.com/alinacsava/visual-coffee-free-theme
 Author: Visual Coffee
 Author URI: https://visual.coffee
 Description: Vintage minimalist theme. Includes social media icons (configurable from Appearance -> Customize). View theme demo at https://demo.visual.coffee/free-theme/
-Version: 1.1
+Version: 1.2
 Text Domain: visual-coffee
 Requires at least: 4.7
-Tested up to: 5.5
+Tested up to: 5.5.1
 Requires PHP: 5.6
 Tags: blog, two-columns, right-sidebar, grid-layout, custom-background, custom-menu, custom-logo, editor-style, theme-options, threaded-comments, translation-ready
 
@@ -105,8 +105,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
-    height: 1px;
-    width: 1px;
+    height: 1px !important;
+    width: 1px !important;
     overflow: hidden;
 }
 
@@ -701,6 +701,16 @@ nav.pagination {
     .pull div ul li a {
         display: block;
     }
+
+    .breadcrumbs {
+        position: fixed;
+        bottom: 0.4rem;
+        left: 0.7rem;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        max-height: 70vh;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -713,17 +723,18 @@ nav.pagination {
         > div   {
             padding-right: 1rem;
         }
+
         .pull {
             display: none;
             background: var(--bg);
-            position: fixed;
-            top: 0;
+            position: absolute;
+            top: 30px;
             left: 0;
             right: 0;
             text-align: left;
 
             ul {
-                padding: 2rem 140px 2rem 2rem;
+                padding: 2rem 80px 2rem 2rem;
             }
 
             li {
@@ -746,11 +757,16 @@ nav.pagination {
             transition: all 0.5s ease-in-out;
             display: flex;
             flex-direction: column;
+            -webkit-appearance: none;
+            appearance: none;
+            border: 0;
+            background: transparent;
+            padding: 0;
 
             span {
                 cursor: pointer;
                 height: 2px;
-                width: 100%;
+                width: 30px;
                 background: var(--title);
                 transition: all 0.5s ease-in-out;
                 margin-top: 7px;
@@ -760,7 +776,7 @@ nav.pagination {
                     content: '';
                     cursor: pointer;
                     height: 2px;
-                    width: 100%;
+                    width: 30px;
                     background: var(--title);
                     display: block;
                     transition: all 0.5s ease-in-out;
@@ -807,17 +823,5 @@ nav.pagination {
     nav.pagination {
         width: 100%;
         grid-column: 1 / span 1;
-    }
-}
-
-@media screen and (min-width: 1201px)	{
-    .breadcrumbs {
-        position: fixed;
-        bottom: 0.4rem;
-        left: 0.7rem;
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        transform-origin: top left;
-        max-height: 70vh;
     }
 }

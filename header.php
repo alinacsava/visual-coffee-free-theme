@@ -101,8 +101,8 @@ Visual Coffee Theme by https://visual.coffee
             </ul>
 		</div>
 
-		<nav>
-			<a id="nav-toggle" class="nav-slide-button" href="#"><span><span class="screen-reader-text">Menu</span></span></a>
+		<nav id="primary-nav">
+            <button id="nav-toggle" class="nav-slide-button" tabindex="0"><span><span class="screen-reader-text">Menu</span></span></button>
 			<div class="pull">
 				<?php wp_nav_menu( array(
 					'theme_location' => 'primary',
