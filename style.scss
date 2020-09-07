@@ -4,7 +4,7 @@ Theme URI: https://github.com/alinacsava/visual-coffee-free-theme
 Author: Visual Coffee
 Author URI: https://visual.coffee
 Description: Vintage minimalist theme. Includes social media icons (configurable from Appearance -> Customize). View theme demo at https://demo.visual.coffee/free-theme/
-Version: 1.2
+Version: 1.3
 Text Domain: visual-coffee
 Requires at least: 4.7
 Tested up to: 5.5.1
@@ -684,6 +684,10 @@ nav.pagination {
 }
 
 @media (min-width: 1201px) {
+    #nav-toggle {
+        display: none;
+    }
+
     .pull {
         display: block !important;
         z-index: 3;

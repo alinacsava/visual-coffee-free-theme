@@ -5,7 +5,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 //Set version constant
-define( 'VISUALCOFFEE_VERSION', '1.2' );
+define( 'VISUALCOFFEE_VERSION', '1.3' );
 
 // Theme setup
 if ( ! function_exists( 'visualcoffee_setup' ) ) {
