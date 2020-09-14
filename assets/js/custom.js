@@ -1,14 +1,7 @@
-//! Version: 1.0
+//! Version: 1.4
 
 jQuery(document).ready(function ($) {
 	NProgress.start();
-
-	// Mobile main nav toggle
-	$("#nav-toggle").on('click', function (e) {
-		$(this).toggleClass("active");
-		e.preventDefault();
-		return false;
-	});
 });
 
 jQuery(window).on('load', function () {
@@ -20,6 +13,5 @@ jQuery(window).on('load', function () {
 	});
 	jQuery('.top-nav ul > li > a').on('click', function () {
 		jQuery('.pull').fadeToggle();
-		jQuery("#nav-toggle").toggleClass("active");
 	});
 });

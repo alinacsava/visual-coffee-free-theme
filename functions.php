@@ -5,7 +5,7 @@ if ( ! isset( $content_width ) ) {
 }
 
 //Set version constant
-define( 'VISUALCOFFEE_VERSION', '1.3' );
+define( 'VISUALCOFFEE_VERSION', '1.4' );
 
 // Theme setup
 if ( ! function_exists( 'visualcoffee_setup' ) ) {
@@ -73,7 +73,7 @@ add_action( 'wp_enqueue_scripts', 'visualcoffee_scripts' );
  * Include a skip to content link at the top of the page so that users can bypass the menu.
  */
 function visualcoffee_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'visual-coffee' ) . '</a>';
+	echo '<a class="skip-link screen-reader-text" href="#site-content" tabindex="20">' . __( 'Skip to the content', 'visual-coffee' ) . '</a>';
 }
 
 add_action( 'wp_body_open', 'visualcoffee_skip_link', 5 );

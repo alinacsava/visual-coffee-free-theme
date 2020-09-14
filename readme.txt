@@ -33,6 +33,11 @@ To display the icons in header follow these steps:
 
 == Changelog ==
 
+= 1.4 =
+* Fixed accessibility issue:
+    tabbing on the last element in the menu should move focus on the x button or close the menu.
+    shift+tab on the x button should move focus on the last element in the menu or close the menu.
+
 = 1.3 =
 * Minor fix main nav toggle button visible on desktop
 
