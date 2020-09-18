@@ -3,7 +3,7 @@ Contributors: visualcoffee
 Tags: blog, two-columns, right-sidebar, grid-layout, custom-background, custom-menu, custom-logo, editor-style, theme-options, threaded-comments, translation-ready
 Requires at least: 4.7
 Tested up to: 5.5.1
-Stable tag: 1.3
+Stable tag: 1.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -33,10 +33,15 @@ To display the icons in header follow these steps:
 
 == Changelog ==
 
+= 1.5 =
+* Fixed accessibility issues:
+  - skip link text not visible
+  - trap focus in menu modal
+
 = 1.4 =
 * Fixed accessibility issue:
-    tabbing on the last element in the menu should move focus on the x button or close the menu.
-    shift+tab on the x button should move focus on the last element in the menu or close the menu.
+  - tabbing on the last element in the menu should move focus on the x button or close the menu
+  - shift+tab on the x button should move focus on the last element in the menu or close the menu
 
 = 1.3 =
 * Minor fix main nav toggle button visible on desktop

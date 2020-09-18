@@ -27,16 +27,18 @@ Visual Coffee Theme by https://visual.coffee
         </div>
 
         <nav id="primary-nav">
-            <button id="nav-toggle" class="nav-slide-button" tabindex="0" aria-label="open"><span><span class="screen-reader-text">Menu</span></span></button>
-            <div class="pull">
+            <button id="nav-toggle" class="nav-slide-button" aria-label="open"><span><span class="screen-reader-text">Menu</span></span></button>
+            <div id="menu-modal" aria-hidden="true" role="dialog">
+                <button id="nav-close" class="nav-slide-button" aria-label="close"><span><span class="screen-reader-text">Menu</span></span></button>
                 <?php wp_nav_menu( array(
                     'theme_location' => 'primary',
                     'menu_id'        => 'primary-menu',
                     'menu_class'     => 'clear',
+                    'container'      => '',
                     'depth'          => 1
                 ) ); ?>
-                <button id="nav-close" class="nav-slide-button" tabindex="0" aria-label="close"><span><span class="screen-reader-text">Menu</span></span></button>
             </div>
+            <div id="modalOverlay" tabindex="-1"></div>
         </nav>
 
         <ul class="social-media-profiles">
