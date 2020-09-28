@@ -1,4 +1,4 @@
-//! Version: 1.5
+//! Version: 1.6
 
 // jQuery formatted selector to search for focusable items
 var focusableElementsString = "a[href], button:not([disabled])";

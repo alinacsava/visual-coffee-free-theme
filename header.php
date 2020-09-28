@@ -117,8 +117,6 @@ Visual Coffee Theme by https://visual.coffee
         </ul>
 	</header>
 
-	<div class="clear"></div>
-
     <main id="site-content">
 	<?php
 	if ( is_page() || is_404() ) { ?>

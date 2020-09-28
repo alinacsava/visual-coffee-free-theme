@@ -4,7 +4,7 @@ Theme URI: https://github.com/alinacsava/visual-coffee-free-theme
 Author: Visual Coffee
 Author URI: https://visual.coffee
 Description: Vintage minimalist theme. Includes social media icons (configurable from Appearance -> Customize). View theme demo at https://demo.visual.coffee/free-theme/
-Version: 1.5
+Version: 1.6
 Text Domain: visual-coffee
 Requires at least: 4.7
 Tested up to: 5.5.1
@@ -343,7 +343,7 @@ iframe {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    padding: 2rem 0;
+    padding: 2rem 0 4rem;
 
     .site-title {
         line-height: 1.2;
@@ -398,7 +398,6 @@ iframe {
 }
 
 .entry-footer {
-    color: #1f48fc;
     font-size: 0.786rem;
     display: inline-flex;
     flex-flow: row nowrap;
@@ -412,20 +411,28 @@ iframe {
 
 .posted-on {
     display: inline-block;
-    padding: 6px 10px 4px;
-    border-right: 2px solid var(--title);
-    letter-spacing: 0;
+    font-family: 'Fraunces Italic', Georgia, serif;
+    font-size: 0.9rem;
+    position: relative;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
 
-    a {
-        color: #1f48fc !important;
+    &::before   {
+        content: '';
+        width: 40px;
+        height: 1px;
+        background: var(--text);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    a   {
+        color: var(--text);
     }
 }
 
 .grid .grid__item {
-    .posted-on {
-        display: none !important;
-    }
-
     .entry-header {
         margin: 2rem 0;
         line-height: 1;
@@ -484,7 +491,6 @@ iframe {
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
     grid-template-columns: 1fr 300px;
     grid-gap: 4rem;
 }

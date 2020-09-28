@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Visual Coffee\n"
-"POT-Creation-Date: 2020-08-20 20:32+0200\n"
+"POT-Creation-Date: 2020-09-28 22:42+0200\n"
 "PO-Revision-Date: 2020-08-06 19:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -75,11 +75,13 @@ msgid "Skip to the content"
 msgstr ""
 
 #: inc/common.php:45 inc/common.php:47
+msgctxt "visual-coffee"
 msgid "Published on"
 msgstr ""
 
 #: inc/common.php:45
-msgid "— Last update:"
+msgctxt "visual-coffee"
+msgid "— Last update"
 msgstr ""
 
 #: inc/common.php:60
